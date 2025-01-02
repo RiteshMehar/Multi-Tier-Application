@@ -1,0 +1,9 @@
+# Launch the MYSQL container
+
+docker run -dit --name mysqlDB \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_USER=Ritesh \
+  -e MYSQL_PASSWORD=root \
+  -e MYSQL_DATABASE=myDB \
+  -v /My-Databases:/var/lib/mysql \
+  mysql:latest
