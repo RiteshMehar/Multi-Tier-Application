@@ -1,10 +1,10 @@
 # Launch the wordpress container
 
 docker run -dit --name wordpress_server \
-  -e WORDPRESS_DB_HOST=mysqlDB \
-  -e WORDPRESS_DB_USER=Ritesh \
-  -e WORDPRESS_DB_PASSWORD=root \
-  -e WORDPRESS_DB_NAME=myDB \
-  --link mysqlDB \
+  -e WORDPRESS_DB_HOST=mysqldb \
+  -e WORDPRESS_DB_USER=ritesh \
+  -e WORDPRESS_DB_PASSWORD=redhat \
+  -e WORDPRESS_DB_NAME=mydb \
+  --link mysqldb \
   -p 1234:80 \
   wordpress:latest
