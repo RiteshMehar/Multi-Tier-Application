@@ -1,9 +1,9 @@
 # Launch the MYSQL container
 
-docker run -dit --name mysqlDB \
-  -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_USER=Ritesh \
-  -e MYSQL_PASSWORD=root \
-  -e MYSQL_DATABASE=myDB \
-  -v /My-Databases:/var/lib/mysql \
+docker run -dit --name mysqldb \
+  -e MYSQL_ROOT_PASSWORD=redhat \
+  -e MYSQL_USER=ritesh \
+  -e MYSQL_PASSWORD=redhat \
+  -e MYSQL_DATABASE=mydb \
+  -v /mydatabases:/var/lib/mysql \
   mysql:latest
